@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
   <remote name="aosp"
-           fetch="git://github.com/lenssflare/" /> 
+           fetch="git://github.com/talnoah/" /> 
   <default revision="refs/tags/android-4.1.2"
            remote="aosp"
            sync-j="4" />
