@@ -6,11 +6,11 @@
   <remote name="aosp"
            fetch="git://github.com/Lens-/" />   
   <remote name="cm"
-           fetch="git://github.com/cyanogenmod/"
-           default revision="cm-11.0" /> 
-  <default revision="refs/tags/android-4.4.2"
-           remote="aosp"
-           sync-j="7" />
+          fetch="http://github.com/CyanogenMod"
+          review="review.cyanogenmod.com" />
+  <default revision="cm-11.0"
+          sync-j="12"
+          remote="cm" />
 
   <project path="build" name="android_build" remote="lenssflare" revision="jb">
     <copyfile src="core/root.mk" dest="Makefile" />
