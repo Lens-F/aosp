@@ -4,10 +4,13 @@
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
   <remote name="aosp"
-           fetch="git://github.com/talnoah/" /> 
-  <default revision="refs/tags/android-4.1.2"
+           fetch="git://github.com/Lens-/" />   
+  <remote name="cm"
+           fetch="git://github.com/cyanogenmod/"
+           default revision="cm-11.0" /> 
+  <default revision="refs/tags/android-4.4.2"
            remote="aosp"
-           sync-j="4" />
+           sync-j="7" />
 
   <project path="build" name="android_build" remote="lenssflare" revision="jb">
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -34,10 +37,13 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/sample" name="device/sample" />
-  <project path="device/htc/shooter" name="device/htc/shooter" groups="device" />
-  <project path="device/htc/jewel" name="device/htc/jewel" groups="device" />
-  <project path="device/htc/shooter" name="android_device_htc_shooter" remote="aosp" revision="jb" groups="device" />
-  <project path="device/samsung/tuna" name="android_device_htc_jewel" remote="aosp" revision="jb" groups="device" />
+  <project path="device/htc/jewel" name="android_device_htc_jewel" />
+  <project path="device/htc/m7-common" name="device_htc_m7-common" remote="cm" revision="cm-11.0" />
+  <project path="device/htc/m7att" name="android_device_htc_m7att" />
+  <project path="device/htc/m7spr" name="android_device_htc_m7spr" />
+  <project path="device/htc/m7tmo" name="android_device_htc_m7tmo" />
+  <project path="device/htc/m7ul" name="device_htc_m7ul" remote="cm" revision="cm-11.0" />
+  <project path="device/htc/m7vzw" name="device_htc_m7vzw" remote="cm" revision="cm-11.0" />
   <project path="device/ti/panda" name="device/ti/panda" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
