@@ -1,18 +1,15 @@
 aosp
 ====
 
-WIP AOSP for msm8960 and msm8660 devices
-
-Will Be adding Stuff Soon **Publicly**
+WIP PURE AOSP for msm8960 and m7 devices
 
 
-$ repo init -u https://github.com/talnoah/aosp.git -b jb
+$ repo init -u https://github.com/Lens-F/aosp.git -b master
 
 
 $ repo sync
 
-
+no need to -j because set to -j12 for omptimal syncing
 -----------
 -----------
 Default.xml only
-DEVS WARNED 
